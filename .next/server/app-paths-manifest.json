@@ -1,7 +1,5 @@
 {
+  "/page": "app/page.js",
   "/about/page": "app/about/page.js",
-  "/signup/page": "app/signup/page.js",
-  "/recommendation/page": "app/recommendation/page.js",
-  "/roadmap/page": "app/roadmap/page.js",
-  "/step/[number]/page": "app/step/[number]/page.js"
+  "/signup/page": "app/signup/page.js"
 }
