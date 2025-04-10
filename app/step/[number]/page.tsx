@@ -1,4 +1,4 @@
-import { Roadmap } from "@/components/Roadmap"  // Adjust path according to your project structure
+import { Roadmap } from "@/components/roadmap"  // Adjust path according to your project structure
 import type { RoadmapData } from "@/lib/types" // Import the types as needed
 import "./step.css";
 import Navbar from "@/components/navbar"
