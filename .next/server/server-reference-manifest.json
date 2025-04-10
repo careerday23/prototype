@@ -1,0 +1,28 @@
+{
+  "node": {
+    "403c8d2a874f0bd0514535d1db00db62f987571e05": {
+      "workers": {
+        "app/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsheylaperez%2FDocuments%2FCareerday-AIRoadmap%2Fstudent-roadmap%2Flib%2Fgenerate-roadmap.ts%22%2C%5B%5B%22403c8d2a874f0bd0514535d1db00db62f987571e05%22%2C%22generateRoadmap%22%5D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    },
+    "40f0c497a473fd69028d90175959c7d81a713c0a44": {
+      "workers": {
+        "app/signup/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsheylaperez%2FDocuments%2FCareerday-AIRoadmap%2Fstudent-roadmap%2Flib%2Fjobs-action.ts%22%2C%5B%5B%2240f0c497a473fd69028d90175959c7d81a713c0a44%22%2C%22findJobsForMajor%22%5D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/signup/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "2NtwhsfUtw7/OZT1kqb7+YtVMkO8ZeZ08QXsw9RSElM="
+}
