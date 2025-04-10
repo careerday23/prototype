@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";  // Importing useEffect from React
 import { StudentForm } from "@/components/student-form";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 
 const Page = () => {
   useEffect(() => {

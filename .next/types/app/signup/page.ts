@@ -1,4 +1,4 @@
-// File: /Users/sheylaperez/Documents/Careerday-AIRoadmap/student-roadmap/app/signup/page.js
+// File: /Users/sheylaperez/Documents/Careerday-AIRoadmap/student-roadmap/app/signup/page.tsx
 import * as entry from '../../../../app/signup/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
