@@ -32,7 +32,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/**/*.js"
-, "app/roadmap/page.jsx"  ],
+, "app/roadmap/page.tsx"  ],
   "exclude": [
     "node_modules"
   ]

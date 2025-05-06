@@ -57,29 +57,3 @@ export default function StepOne({
   );
 }
 
-
-// import { CheckCircle } from "lucide-react"
-
-// interface RoadmapStepProps {
-//   number: number
-//   semester: string
-//   title: string
-//   description: string
-// }
-
-// export default function RoadmapStep({ number, semester, title, description }: RoadmapStepProps) {
-//   return (
-//     <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow mb-4">
-//       <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-//         <CheckCircle className="h-6 w-6 text-green-600" />
-//       </div>
-//       <div>
-//         <div className="flex items-center gap-3 mb-1">
-//           <span className="text-sm font-medium text-gray-500">{semester}</span>
-//         </div>
-//         <h3 className="text-lg font-semibold mb-1">{title}</h3>
-//         <p className="text-gray-600">{description}</p>
-//       </div>
-//     </div>
-//   )
-// }

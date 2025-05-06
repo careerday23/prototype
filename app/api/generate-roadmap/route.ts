@@ -354,44 +354,43 @@
 //   }
 // }
 
-import type { NextApiRequest, NextApiResponse } from 'next'
+// import type { NextApiRequest, NextApiResponse } from 'next'
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' })
-  }
+// export default async function handler(
+//   req: NextApiRequest,
+//   res: NextApiResponse
+// ) {
+//   if (req.method !== 'POST') {
+//     return res.status(405).json({ error: 'Method not allowed' })
+//   }
 
-  try {
-    const { title, description } = req.body
+//   try {
+//     const { title, description } = req.body
 
-    // Here you would typically call an AI service or your own logic
-    // This is a mock response - replace with actual implementation
-    const generatedRoadmap = {
-      stages: [
-        {
-          stage: `Step 1: Foundation in ${title}`,
-          description: `Begin by learning the core concepts of ${title}. ${description}`,
-          duration: "3-6 months",
-          keySkills: ["Fundamentals", "Basic Concepts"],
-          resources: ["Online Courses", "Introductory Books"]
-        },
-        {
-          stage: `Step 2: Intermediate ${title} Skills`,
-          description: `Build upon your foundation with more advanced topics in ${title}.`,
-          duration: "6-12 months",
-          keySkills: ["Advanced Techniques", "Problem Solving"],
-          resources: ["Advanced Courses", "Practice Projects"]
-        },
-        // Add more generated steps as needed
-      ]
-    }
+  
+//     const generatedRoadmap = {
+//       stages: [
+//         {
+//           stage: `Step 1: Foundation in ${title}`,
+//           description: `Begin by learning the core concepts of ${title}. ${description}`,
+//           duration: "3-6 months",
+//           keySkills: ["Fundamentals", "Basic Concepts"],
+//           resources: ["Online Courses", "Introductory Books"]
+//         },
+//         {
+//           stage: `Step 2: Intermediate ${title} Skills`,
+//           description: `Build upon your foundation with more advanced topics in ${title}.`,
+//           duration: "6-12 months",
+//           keySkills: ["Advanced Techniques", "Problem Solving"],
+//           resources: ["Advanced Courses", "Practice Projects"]
+//         },
+//         // Add more generated steps as needed
+//       ]
+//     }
 
-    res.status(200).json({ roadmap: generatedRoadmap })
-  } catch (error) {
-    console.error('Error generating roadmap:', error)
-    res.status(500).json({ error: 'Failed to generate roadmap' })
-  }
-}
+//     res.status(200).json({ roadmap: generatedRoadmap })
+//   } catch (error) {
+//     console.error('Error generating roadmap:', error)
+//     res.status(500).json({ error: 'Failed to generate roadmap' })
+//   }
+// }

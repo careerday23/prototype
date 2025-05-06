@@ -3,7 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from 'react-bootstrap/Container';
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
+import { Button } from "@/components/ui/button"
+
 import { useState } from "react";  // Import useState for component state management
 
 
@@ -48,12 +50,70 @@ export default function About() {
           </button>
        </Link>
        
+
         </div>
+
+
+        
    
               </div>
+              
             </div>
+            
+          </div>
+          
+        </div>
+
+
+        <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4">How It Works</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our career recommendation system uses your unique profile to match you with careers that align with your
+            strengths and preferences.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="text-center p-6 border rounded-lg shadow-sm">
+            <div className="w-16 h-16 bg-[#6d6bd3] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              1
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Complete the Survey</h3>
+            <p className="text-gray-600">
+              Answer questions about your interests, skills, values, and preferences to create your unique profile.
+            </p>
+          </div>
+
+          <div className="text-center p-6 border rounded-lg shadow-sm">
+            <div className="w-16 h-16 bg-[#6d6bd3] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              2
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Get Personalized Recommendations</h3>
+            <p className="text-gray-600">
+              Our algorithm analyzes your responses to identify careers that match your profile.
+            </p>
+          </div>
+
+          <div className="text-center p-6 border rounded-lg shadow-sm">
+            <div className="w-16 h-16 bg-[#6d6bd3] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              3
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Explore Career Roadmaps</h3>
+            <p className="text-gray-600">
+              Dive deeper into each recommended career with detailed roadmaps for education, skills, and advancement.
+            </p>
           </div>
         </div>
+
+        <div className="text-center mt-16">
+          <Link href="/survey">
+            <Button size="lg" className="bg-[#6d6bd3] hover:bg-[#5a58b8]">
+              Start Your Career Journey
+            </Button>
+          </Link>
+        </div>
+      </div>
   
     </>
   );
