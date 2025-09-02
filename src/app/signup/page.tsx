@@ -40,7 +40,7 @@ export default function StudentQuestionnaire() {
 
   return (
     <>
-      <Navbar />
+
       <main className="min-h-screen p-4 md:p-24 max-w-5xl mx-auto">
         <div className="space-y-7">
           <div className="text-center space-y-2">
