@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 export default function SignupPage() {
@@ -10,6 +11,8 @@ export default function SignupPage() {
     password: '',
   });
 
+  const router = useRouter();
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -17,6 +20,9 @@ export default function SignupPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', form);
+
+    // after signup success -> go to next step
+    router.push('/general-account/next-step');
   };
 
   return (
@@ -27,22 +33,11 @@ export default function SignupPage() {
         transition={{ duration: 0.6 }}
         className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8"
       >
-        {/* Header */}
-        <motion.h1
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-extrabold text-center tracking-tight"
-        >
+        <motion.h1 className="text-3xl md:text-4xl font-extrabold text-center tracking-tight">
           Create <span className="text-[#6d6bd3]">Your Account</span>
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="mt-3 text-center text-slate-600 text-base"
-        >
+        <motion.p className="mt-3 text-center text-slate-600 text-base">
           Sign up to explore careers, build skills, and design your future.
         </motion.p>
 
@@ -103,13 +98,9 @@ export default function SignupPage() {
           </motion.button>
         </form>
 
-        {/* Footer */}
         <p className="mt-6 text-center text-sm text-slate-500">
           Already have an account?{' '}
-          <a
-            href="/login"
-            className="text-[#6d6bd3] font-medium hover:underline"
-          >
+          <a href="/login" className="text-[#6d6bd3] font-medium hover:underline">
             Log In
           </a>
         </p>
