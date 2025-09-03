@@ -1,27 +1,27 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
-import Container from 'react-bootstrap/Container';
-import { Button } from '@/components/ui/button';
-import Footer from '@/components/footer';
-import Navbar from '@/components/navbar';
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 export default function About() {
   const [showCareerModal, setShowCareerModal] = useState(false);
 
   return (
     <>
+   
+
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#6d6bd3] via-[#5a58b8] to-[#6d6bd3] min-h-[600px] overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#6d6bd3] via-[#5a58b8] to-[#6d6bd3] min-h-[600px] flex items-center">
         <div className="absolute inset-0 bg-[url('https://public.readdy.ai/ai/img_res/0f842a5615fc80362a29e48bd4ce0497.jpg')] bg-cover opacity-20"></div>
-        <div className="max-w-7xl mx-auto px-6 py-28 relative">
+        <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white z-10">
+            <div className="text-white">
               <h1 className="text-5xl font-extrabold leading-tight mb-6 drop-shadow-lg">
                 Design Your Future with
-                <span className="block mt-2 text-[#ffffff]">
+                <span className="block mt-2 text-white">
                   AI-Powered Guidance
                 </span>
               </h1>
@@ -32,21 +32,22 @@ export default function About() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/signup">
-                  <button
+                  <Button
+                    size="lg"
                     onClick={() => setShowCareerModal(true)}
-                    className="rounded-full bg-white text-[#6d6bd3] px-8 py-4 font-semibold hover:bg-gray-100 transition duration-200 shadow-lg"
+                    className="rounded-full bg-white text-[#6d6bd3] hover:bg-gray-100 font-semibold px-8 py-4 shadow-lg"
                   >
                     Start Your Journey
-                  </button>
+                  </Button>
                 </Link>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* How It Works Section */}
-      <div className="max-w-7xl mx-auto px-4 py-20">
+      <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">How It Works</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -87,7 +88,7 @@ export default function About() {
         </div>
 
         <div className="text-center mt-20">
-          <Link href="/survey">
+          <Link href="/general-account">
             <Button
               size="lg"
               className="rounded-full px-10 py-4 bg-[#6d6bd3] hover:bg-[#5a58b8] text-lg font-semibold shadow-lg"
@@ -96,7 +97,9 @@ export default function About() {
             </Button>
           </Link>
         </div>
-      </div>
+      </section>
+
+   
     </>
   );
 }
